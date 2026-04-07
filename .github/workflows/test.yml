@@ -15,17 +15,17 @@ concurrency:
 jobs:
   yamllint:
     name: 'Lint Yaml'
-    uses: PHPCSStandards/.github/.github/workflows/reusable-yamllint.yml@a06ac9fa50dcd1d98cc581e9a4e331363a69ea09 # v1.1.0
+    uses: PHPCSStandards/.github/.github/workflows/reusable-yamllint.yml@4ed5b7db58f8a2703cb83fdd7cf8a018b3aa974b # v1.1.3
     with:
       strict: true
 
   markdownlint:
     name: 'Lint Markdown'
-    uses: PHPCSStandards/.github/.github/workflows/reusable-markdownlint.yml@a06ac9fa50dcd1d98cc581e9a4e331363a69ea09 # v1.1.0
+    uses: PHPCSStandards/.github/.github/workflows/reusable-markdownlint.yml@4ed5b7db58f8a2703cb83fdd7cf8a018b3aa974b # v1.1.3
 
   remark:
     name: 'QA Markdown'
-    uses: PHPCSStandards/.github/.github/workflows/reusable-remark.yml@a06ac9fa50dcd1d98cc581e9a4e331363a69ea09 # v1.1.0
+    uses: PHPCSStandards/.github/.github/workflows/reusable-remark.yml@4ed5b7db58f8a2703cb83fdd7cf8a018b3aa974b # v1.1.3
 
   # Validate the "valid" XSD files used in the tests.
   validate-xsds:
@@ -34,7 +34,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           persist-credentials: false
 
@@ -239,7 +239,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           persist-credentials: false
 
